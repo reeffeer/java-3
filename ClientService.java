@@ -1,20 +1,14 @@
 package client.service;
 
-import jdk.tools.jlink.internal.Platform;
-
 import javax.swing.*;
-import javax.tools.ForwardingJavaFileManager;
-import javax.tools.JavaFileManager;
-import java.awt.event.ActionListener;
 import java.io.*;
-import java.lang.management.PlatformManagedObject;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class ClientService extends JFrame {
+public class ClientService {
 
     private Socket socket;
     private DataInputStream inputStream;
