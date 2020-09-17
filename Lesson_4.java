@@ -41,7 +41,7 @@ public class Lesson_4 {
         System.out.println(reverseString.reverse("java interview"));
 
         // task 3
-        Integer[] arr = {45, 6, 26, 43, 5, 2, 12};
+        Integer[] arr = {6, 45, 26, 43, 5, 2, 12};
         MaxInteger maxInt = () -> {
             if (arr.length == 0) {
                 throw new IllegalArgumentException();
@@ -49,6 +49,7 @@ public class Lesson_4 {
             int max = arr[0];
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i] > max) {
+                    max = arr[i];
                 }
             }
             return max;
@@ -63,8 +64,8 @@ public class Lesson_4 {
                 throw new IllegalArgumentException();
             }
             int sum = 0;
-            for (Integer s : list1) {
-                sum += list1.get(s);
+            for (Integer indexx : list1) { //проходим по элементам списка и приплюсовываем каждое значение, полученное по индексу, к сумме.
+                sum += list1.get(indexx);
             }
             return (double) sum / list1.size();
         };
