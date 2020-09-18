@@ -64,8 +64,8 @@ public class Lesson_4 {
                 throw new IllegalArgumentException();
             }
             int sum = 0;
-            for (Integer indexx : list1) { //проходим по элементам списка и приплюсовываем каждое значение, полученное по индексу, к сумме.
-                sum += list1.get(indexx);
+            for (Integer s : list1) { //проходим по элементам списка и приплюсовываем каждое значение, полученное по индексу, к сумме.
+                sum += s;
             }
             return (double) sum / list1.size();
         };
